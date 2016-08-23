@@ -50,8 +50,14 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="DailyTaskTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ScheduledTasks\ScheduledTasks.csproj">
+      <Project>{fd8eefd4-e285-4078-b729-8284eb0cabc0}</Project>
+      <Name>ScheduledTasks</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
